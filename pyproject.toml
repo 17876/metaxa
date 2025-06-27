@@ -1,0 +1,19 @@
+[project]
+name = "metaxa"
+version = "0.1.0"
+description = "A Python tool to extract metadata from WAV files."
+authors = [
+    { name = "Anton X", email = "x@xers.info" }
+]
+readme = "README.md"
+requires-python = ">=3.7"
+license = { text = "MIT" }
+keywords = ["wav", "metadata", "audio", "wav metadata extractor"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"

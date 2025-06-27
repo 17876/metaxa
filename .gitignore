@@ -1,0 +1,17 @@
+# Distribution / packaging
+__pycache__/
+.pytest_cache
+build/
+*.egg-info/
+tests/
+.idea/
+.DS_Store
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
