@@ -48,7 +48,7 @@ The `Name` field holds the `FXName` used in the filename, following UCS conventi
 
 Format:
 ```
-TITLE (Take#) - Subtitle - Props - Verbs - Descriptive Terms
+TITLE (Take#) - Subtitle - Props - Verbs
 ```
 
 Example:
@@ -72,7 +72,6 @@ CAN - Pluck - 033 Can, Pull Tab - Pluck, Squeeze, Drag
 
 - **Verbs:**  
   Actions performed on the props.
-- 
 ---
 
 ### Ambience Source SFX
