@@ -68,10 +68,10 @@ CAN - Pluck - 033 Can, Pull Tab - Pluck, Squeeze, Drag
   Additional context or description.
 
 - **Props:**  
-  Objects or materials used in creating the sound.
+  Objects or materials used in creating the sound. In case of people - names or description.
 
 - **Verbs:**  
-  Actions performed on the props.
+  Actions performed on the props. In case of people - description of what they are doing.
 ---
 
 ### Ambience Source SFX

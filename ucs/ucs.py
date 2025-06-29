@@ -16,19 +16,19 @@ def metadata_ucs_rename(directory, ext):
                 metadata = extractor.extract()
 
                 # ucs category id
-                cat_id = metadata.get('INFO', {}).get('IGNR', 'NONE')
+                cat_id = metadata.get('INFO', {}).get('IGNR', 'NONE').strip()
 
                 # generating FXName
                 # keywords = metadata.get('INFO', {}).get('IKEY', 'NONE').split(';')
                 # keywords_stripped = [i.strip() for i in keywords]
                 # fx_name = '-'.join(keywords_stripped)
-                fx_name = metadata.get('INFO', {}).get('INAM', 'NONE')
+                fx_name = metadata.get('INFO', {}).get('INAM', 'NONE').strip()
 
                 # creator id
-                creator_id = 'AX'
+                creator_id = metadata.get('INFO', {}).get('IART', 'NONE').strip()
 
                 # source id
-                source_id = metadata.get('INFO', {}).get('IPRD', 'NONE')
+                source_id = metadata.get('INFO', {}).get('IPRD', 'NONE').strip()
 
                 # unique identifier to avoid duplicates
                 # date-time
@@ -40,11 +40,8 @@ def metadata_ucs_rename(directory, ext):
                 date_concat = date.replace('-', '')
                 time_concat = time.replace('-', '')
                 user_data = '-'.join([date_concat, time_concat])
-
                 ucs_filename = f"{'_'.join([cat_id, fx_name, creator_id, source_id, user_data])}{os.path.splitext(filename)[1]}"
-
                 ucs_filepath = os.path.join(directory, ucs_filename)
-
                 os.rename(filepath, ucs_filepath)
                 print(f"Renamed: {filename} -> {ucs_filename}")
 
